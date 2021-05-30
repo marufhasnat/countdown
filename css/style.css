@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../images/snow.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+h1{
+    font-size: 4rem;
+    margin-top: -10rem;
+}
+
+.countdown-container{
+    display: flex;
+}
+
+.time{
+    text-align: center;
+}
+
+.big-text{
+    font-weight: bold;
+    font-size: 5rem;
+    line-height: 1;
+    margin: 0 2rem;
+}
+
+.time span{
+    font-size: 1.3rem;
+}
+
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    h1{
+        font-size: 1.4rem;
+        /* margin-top: -5rem; */
+    }
+    .big-text{
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+    .time span{
+        font-size: 0.8rem;
+    }
+}
+
+ /*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1{
+        font-size: 2.7rem;
+    }
+    .big-text{
+        font-size: 3.7rem;
+    }
+}
+
+ /*Medium devices (tablets, 768px and up)*/
+ @media (min-width: 768px) and (max-width: 991.98px) {
+    h1{
+        font-size: 3rem;
+    }
+    .big-text{
+        font-size: 4rem;
+    }
+}
